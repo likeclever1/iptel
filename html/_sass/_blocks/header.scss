@@ -1,0 +1,89 @@
+//  ======================================================
+//  Header
+//  ======================================================
+.header{
+    @extend .clearfix;
+    @include border-radius(0 0 9px 9px);
+    margin: 0 auto 1px;
+    padding: 15px 0 7px 0;
+    width: $content-width;
+    border: 1px solid #fff;
+    background: #c0c6de;
+    background: -moz-linear-gradient(top, #c0c6de 0%, #ffffff 62%, #e7e7ed 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c0c6de), color-stop(62%,#ffffff), color-stop(100%,#e7e7ed));
+    background: -webkit-linear-gradient(top, #c0c6de 0%,#ffffff 62%,#e7e7ed 100%);
+    background: -o-linear-gradient(top, #c0c6de 0%,#ffffff 62%,#e7e7ed 100%);
+    background: -ms-linear-gradient(top, #c0c6de 0%,#ffffff 62%,#e7e7ed 100%);
+    background: linear-gradient(to bottom, #c0c6de 0%,#ffffff 62%,#e7e7ed 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c0c6de', endColorstr='#e7e7ed',GradientType=0 );
+    .logo{
+        float: left;
+        width: 340px;
+        text-align: center;
+        a{
+            display: block;
+            text-align: center;
+        }
+        p{
+            margin: 0 0 0 0;
+            color: #585858;
+            text-shadow: 0 1px 0px #fff;
+            font-style: italic;
+            font-size: 13px;
+            line-height: 14px;
+        }
+    }
+}
+
+.header__contact{
+    float: left;
+    margin: 0 0 0 2px;
+    padding: 10px 0 0 0;
+    width: 370px;
+}
+
+.header__contact-address{
+    .lead{
+        color: #585858;
+        font-size: 17px;
+        line-height: 28px;
+    }
+    .number{
+        color: #585858;
+        font-size: 17px;
+        line-height: 28px;
+        span{
+            font-size: 27px;
+            color: #016da9;
+        }
+    }
+    .mail{
+        color: #585858;
+        text-shadow: 0 1px 0px #fff;
+        font-size: 17px;
+        line-height: 28px;
+        a{
+            padding-left: 25px;
+            color: #000;
+            text-decoration: none;
+            text-shadow: 0 1px 0px #fff;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.web-call{
+    float: left;
+    padding: 10px 0 0 0;
+    width: 220px;
+    text-align: center;
+    .lead{
+        margin: 0 0 10px 0;
+        color: #585858;
+        font-size: 16px;
+        line-height: 26px;
+    }
+}
+

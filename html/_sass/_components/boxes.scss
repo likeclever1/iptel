@@ -1,0 +1,46 @@
+//  ======================================================
+//  boxes
+//  ======================================================
+
+.box{
+    @include border-radius(15px);
+    @include box-shadow($b-box-shadow);
+    overflow: hidden;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    margin: 0 0 50px 0;
+    border: 1px solid #9b9b9b;
+    background-color: #fff;
+}
+
+.box__section{
+    //box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .75);
+    position: relative;
+}
+
+.box__title{
+    margin: 0;
+    padding: 15px 0;
+    width: 100%;
+    color: #f8f8f8;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+    text-shadow: $text-shadow;
+
+    background-color: #006519;
+    -moz-box-shadow: inset 0 0 5px 0 rgba(0,0,0,.75);
+    -webkit-box-shadow: inset 0 0 5px 0 rgba(0,0,0,.75);
+    box-shadow: inset 0 0 5px 0 rgba(0,0,0,.75);
+    background-image: -moz-linear-gradient(left, #006519 0%, #008121 50.46%, #006519 100%);
+    background-image: -o-linear-gradient(left, #006519 0%, #008121 50.46%, #006519 100%);
+    background-image: -webkit-linear-gradient(left, #006519 0%, #008121 50.46%, #006519 100%);
+    background-image: linear-gradient(left, #006519 0%, #008121 50.46%, #006519 100%);
+}
+
+.box__content{
+    .tech-list{
+        padding: 15px 70px;
+    }
+}

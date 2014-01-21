@@ -1,0 +1,99 @@
+//  ======================================================
+//  Main-navigation
+//  ======================================================
+.main-navigation{
+    @extend .clearfix;
+    position: relative;
+    display: table;
+    margin: 0 auto 25px;
+    padding: 0 40px 0 32px;
+    width: 960px;
+    border-bottom: 1px solid #4a5d7d;
+    background: #04375e;
+    &:before{
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        overflow: hidden;
+        width: 161px;
+        height: 61px;
+        background: url('../images/icons.png') no-repeat -109px -67px;
+        content:"";
+        text-indent: -9999px;
+    }
+    &:after{
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: block;
+        overflow: hidden;
+        width: 161px;
+        height: 61px;
+        background: url('../images/icons.png') no-repeat -109px -1px;
+        content:"";
+        text-indent: -9999px;
+    }
+}
+
+.main-navigation__search{
+    @include border-radius(6px);
+    @include box-shadow(inset 0 2px 3px 0 #a7c2dc);
+    position: relative;
+    z-index: 1;
+    float: right;
+    margin: 17px 0 0 0;
+    padding: 3px 25px 3px 8px;
+    width: 200px;
+    height: 30px;
+    background: #fff;
+    input[type="search"]{
+        display: block;
+        float: left;
+        width: 170px;
+        height: 24px;
+        border: none;
+        color: darken(#898989, 20%);
+        font-size: 16px;
+        line-height: 24px;
+    }
+    input[type="submit"]{
+        position: absolute;
+        top: 50%;
+        right: 8px;
+        margin-top: -8px;
+        width: 18px;
+        height: 18px;
+        border: none;
+        background: transparent url('../images/icons.png') no-repeat 0 -34px;
+        cursor: pointer;
+    }
+}
+
+.main-navigation__menu{
+    @extend .clearfix;
+    position: relative;
+    a{
+        float: left;
+        padding: 20px 25px;
+        height: 60px;
+        border-left: 1px solid #485c7c;
+        color: #fff;
+        text-decoration: none;
+                text-shadow: 0 4px 4px rgba(0, 21, 36, 0.75);
+        font-size: 17px;
+        line-height: 20px;
+        -webkit-text-shadow: 0 4px 4px rgba(0, 21, 36, 0.75);
+           -moz-text-shadow: 0 4px 4px rgba(0, 21, 36, 0.75);
+        &:first-child{
+            border-left: none;
+        }
+        &.active{
+            background-color: #00223b;
+        }
+        &:hover{
+            background-color: #096a9f;
+            color: #c9cbcd;
+        }
+    }
+}

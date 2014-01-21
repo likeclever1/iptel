@@ -1,0 +1,23 @@
+//  ======================================================
+//  Main
+//  ======================================================
+.main{
+    width: 100%;
+    min-width: 960px;
+    padding: 0 0 10px 0;
+    background: transparent url(../images/main_gradient_bg_bottom.png) 0 100% repeat-x;
+}
+
+.main__inner{
+    width: $content-width;
+    margin: 0 auto;
+}
+
+.main-title{
+    position: relative;
+    margin: 30px 0;
+    color: #f8f8f8;
+    text-align: center;
+    font-size: 30px;
+    line-height: 30px;
+}

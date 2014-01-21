@@ -1,0 +1,50 @@
+//  ======================================================
+//  Imports _base
+//  ======================================================
+
+@import "_base/variables";
+@import "_base/mixins";
+@import "_base/reset";
+@import "_base/primary";
+
+//  ======================================================
+//  Imports _helpers
+//  ======================================================
+
+@import "_helpers/clearfix";
+@import "_helpers/helpers";
+//  @import "_helpers/sticky-footer";
+
+//  ======================================================
+//  Imports _plugins
+//  ======================================================
+
+//  ======================================================
+//  Imports _components
+//  ======================================================
+
+@import "_components/boxes";
+@import "_components/btns";
+@import "_components/slider";
+
+//  ======================================================
+//  Imports _blocks
+//  ======================================================
+
+@import "_blocks/header";
+@import "_blocks/main";
+@import "_blocks/footer";
+@import "_blocks/main-navigation";
+@import "_blocks/page-navigation";
+@import "_blocks/service";
+@import "_blocks/team-info";
+@import "_blocks/location-breadcrumbs";
+@import "_blocks/advantage";
+@import "_blocks/article";
+@import "_blocks/vertical-list";
+@import "_blocks/tech-list";
+
+//  ======================================================
+//  Imports print
+//  ======================================================
+@import "_base/print";

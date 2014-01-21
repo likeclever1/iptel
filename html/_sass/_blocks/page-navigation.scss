@@ -1,0 +1,37 @@
+//  ======================================================
+//  Page-Navigation
+//  ======================================================
+.page-navigation{
+    width: 100%;
+    min-width: 960px;
+    background-color: #122742;
+}
+
+.page-navigation__inner{
+    width: 100%;
+    border-top: 1px solid #33455d;
+    -webkit-box-shadow: 0 4px 4px -2px rgba(0,1,0, .37);
+            box-shadow: 0 4px 4px -2px rgba(0,1,0, .37);
+}
+
+.page-navigation__menu{
+    width: 916px;
+    margin: 0 auto;
+    padding: 10px 12px;
+    a{
+        color: #4a5c7a;
+        font-size: 19px;
+        line-height: 28px;
+        text-decoration: none;
+        margin-left: 80px;
+        &:first-child{
+            margin-left: 0;
+        }
+        &.active{
+            color: #fff;
+        }
+        &:hover{
+            color: #fff;
+        }
+    }
+}

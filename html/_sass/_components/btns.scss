@@ -1,0 +1,82 @@
+//  ======================================================
+//  Button
+//  ======================================================
+
+.btn{
+    overflow: visible;
+    position: relative;
+    display: inline-block;
+    padding: 10px 30px 10px 40px;
+    height: 41px;
+    border: none;
+    background: transparent url('../images/btns.png') no-repeat 0 -118px;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 1px 2px rgba(0, 1, 0, 0.75);
+    font-size: 19px;
+    line-height: 21px;
+    cursor: pointer;
+    -webkit-text-shadow: 0 1px 2px rgba(0, 1, 0, 0.75);
+       -moz-text-shadow: 0 1px 2px rgba(0, 1, 0, 0.75);
+    &:after{
+        position: absolute;
+        top: 0;
+        right: -10px;
+        display: block;
+        overflow: hidden;
+        width: 10px;
+        height: 44px;
+        background: url('../images/btns.png') no-repeat 100% -118px;
+        content: '';
+        text-indent: -9999px;
+    }
+    &:focus{
+        outline: none;
+        border: none;
+    }
+    &:link{
+        color: #fff;
+    }
+    &:visited{
+        color: #fff;
+    }
+    &:hover{
+        background-position: 0 -170px;
+        color: #fff;
+        &:after{
+            background-position: 100% -170px;
+        }
+    }
+    &:active{
+        color: #fff;
+    }
+}
+
+.btn_icon-call{
+    padding-right: 10px;
+    padding-left: 40px;
+    height: 44px;
+    background-position: 0 0;
+    line-height: 24px;
+    &:before{
+        position: absolute;
+        top: 9px;
+        left: 12px;
+        display: block;
+        overflow: hidden;
+        width: 23px;
+        height: 25px;
+        background: url('../images/icons.png') no-repeat 0 0;
+        content: '';
+        text-indent: -9999px;
+    }
+    &:after{
+        background-position: 100% 0;
+    }
+    &:hover{
+        background-position: 0 -56px;
+        &:after{
+            background-position: 100% -56px;
+        }
+    }
+}
