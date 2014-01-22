@@ -1,0 +1,43 @@
+//  ======================================================
+//  list-price
+//  ======================================================
+.box {
+    .list-price{
+        list-style-type: none;
+        margin-left: 0;
+        li{
+            margin: 15px 0;
+            font-size: 18px;
+            line-height: 20px;
+            font-family: $Trebuchet;
+            &.open{
+                .icon-open{
+                    display: inline;
+                }
+                .icon-close{
+                    display: none;
+                }
+                .devices-table{
+                    display: block;
+                }
+            }
+        }
+        a{
+            color: #2c89e6;
+            border-bottom: 1px dashed #006dd9;
+            text-decoration: none;
+            &:hover{
+                border-bottom: none;
+            }
+        }
+        span{
+            color: #000;
+        }
+        .icon-open{
+            display: none;
+        }
+        .devices-table{
+            display: none;
+        }
+    }
+}

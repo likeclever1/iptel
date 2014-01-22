@@ -49,10 +49,9 @@
         $(this).find('.service__item-title').equalHeights();
     });
 
-    $('.advantage__line').each(function() {
-        $(this).find('.advantage__item-title').equalHeights();
-        $(this).find('.advantage__item-img').equalHeights();
-    });
+    // $('.advantage__line').each(function() {
+    //     $(this).find('.advantage__item-title').equalHeights();
+    // });
 
     $('#corpCodeTo').on("click", function(e) {
         if($("#corpCode").length) {
@@ -66,6 +65,11 @@
     $('.page-navigation__menu').on('click', 'a', function(e) {
         $(this).siblings('a').removeClass('active');
         $(this).addClass('active');
+    });
+
+    $('.list-price').on('click', 'li', function(e) {
+        e.preventDefault();
+        $(this).toggleClass('open');
     });
 
 })(jQuery);
