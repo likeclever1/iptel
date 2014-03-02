@@ -1,0 +1,56 @@
+//  ======================================================
+//  popup
+//  ======================================================
+.popup{
+    padding: 4px 25px;
+    display: none;
+}
+
+.popup__header{
+    border-bottom: 1px solid #dadada;
+    margin: 0 0 24px 0;
+    h3{
+        color: #635c58;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 1.4;
+        text-align: center;
+        margin: 0 0 15px 0;
+    }
+}
+
+.popup__callback{
+    width: 426px;
+    input[type="text"],
+    input[type="password"]{
+        color: $grey;
+        font-size: 14px;
+        line-height: 1.2;
+        height: 32px;
+        width: 234px;
+    }
+}
+
+.popup__callback-line{
+    @extend %clearfix;
+    margin: 0 0 13px 0;
+    label{
+        float: left;
+        width: 190px;
+        font-size: 18px;
+        line-height: 40px;
+        color: #635c58;
+    }
+    span{
+        color: #ba1819;
+    }
+}
+
+.popup__callback-line_control{
+    text-align: center;
+    margin-top: 18px;
+    .btn{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}

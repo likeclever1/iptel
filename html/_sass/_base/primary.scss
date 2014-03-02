@@ -96,3 +96,22 @@ td{
     font-size: 16px;
     line-height: 20px;
 }
+
+input[type="text"],
+input[type="password"]{
+    background: #122647;
+    border: 1px solid #395370;
+    color: #fff;
+    font-size: 18px;
+    line-height: 21px;
+    height: 33px;
+    display: block;
+    display: inline-block;
+    padding: 7px 14px;
+}
+
+input[type="text"].light,
+input[type="password"].light{
+    background-color: #e6e6e6;
+    border-color: #dadada;
+}

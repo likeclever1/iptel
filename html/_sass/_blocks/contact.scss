@@ -1,0 +1,83 @@
+//  ======================================================
+//  Contact
+//  ======================================================
+.contact{
+    margin: 44px 90px;
+    @extend %clearfix;
+    dl{
+        padding-top: 20px;
+    }
+    dt{
+        color: #096a9f;
+        font-size: 20px;
+        line-height: 26px;
+        float: left;
+        width: 80px;
+    }
+    dd{
+        overflow: hidden;
+        font-size: 20px;
+        line-height: 26px;
+        color: #f6f6f6;
+        margin: 0 0 20px 0;
+        span{
+            color: #d8e3e9;
+        }
+        a{
+            color: #fff;
+            text-decoration: none;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.contact__title{
+    color: #e0e2eb;
+    font-size: 30px;
+    line-height: 36px;
+    margin: 0 0 30px 0;
+    text-shadow: 2px 4px 4px rgba(0,1,0,.75);
+    font-weight: normal;
+}
+
+.contact__block{
+    padding: 0 80px 20px;
+    h3{
+        text-align: center;
+        margin: 0 0 30px 0;
+        color: #f6f6f6;
+        font-family: "Trebuchet MS";
+        font-size: 22px;
+        line-height: 24px;
+        font-weight: normal;
+    }
+
+    .or{
+        line-height: 42px;
+        color: #f6f6f6;
+        font-size: 22px;
+        text-align: center;
+    }
+
+    label{
+        text-indent: 10px;
+        display: block;
+        color: #96a5be;
+        font-size: 17px;
+        line-height: 19px;
+        margin: 0 0 10px 0;
+    }
+    input{
+        width: 256px;
+        margin-right: 30px;
+    }
+}
+
+.contact__block-callback{
+    padding-left: 25px;
+    .btn{
+        margin-top: 26px;
+    }
+}

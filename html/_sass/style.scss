@@ -20,6 +20,8 @@
 //  Imports _plugins
 //  ======================================================
 
+@import "_plugins/fancybox";
+
 //  ======================================================
 //  Imports _components
 //  ======================================================
@@ -27,6 +29,8 @@
 @import "_components/boxes";
 @import "_components/btns";
 @import "_components/slider";
+@import "_components/h-list";
+@import "_components/popup";
 
 //  ======================================================
 //  Imports _blocks
@@ -45,6 +49,8 @@
 @import "_blocks/vertical-list";
 @import "_blocks/tech-list";
 @import "_blocks/list-price";
+@import "_components/line";
+@import "_blocks/contact";
 
 //  ======================================================
 //  Imports print

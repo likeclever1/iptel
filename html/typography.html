@@ -36,7 +36,7 @@
         
         <div class="web-call">
             <div class="lead">Или звоните прямо с сайта!</div>
-            <a href="#" class="btn btn_icon-call">Звонок с сайта</a>
+            <a href="#popup-callback" id="popup-callback-btn" class="btn btn_icon-call">Звонок с сайта</a>
         </div>
     </header><!-- .header -->
 
@@ -397,6 +397,35 @@
             IPtel. Цифровые АТС на базе Asterisk. Все права защищены &copy; 2013
         </div>
     </footer><!-- .footer -->
+
+    <div class="popup" id="popup-callback">
+        <header class="popup__header">
+            <h3>Перезвоните мне!</h3>
+        </header>
+
+        <div class="popup__main">
+            <div class="popup__callback">
+                <div class="popup__callback-line">
+                    <label for="userName">Ваше имя<span>*</span></label>
+                    <input class="light" type="text" name="userName" id="userName">
+                </div>
+
+                <div class="popup__callback-line">
+                    <label for="userPhone">Ваш телефон<span>*</span></label>
+                    <input class="light" type="text" name="userPhone" id="userPhone">
+                </div>
+
+                <div class="popup__callback-line">
+                    <label for="userTime">Время для звонка<span>*</span></label>
+                    <input class="light" type="text" name="userTime" id="userTime">
+                </div>
+
+                <div class="popup__callback-line popup__callback-line_control">
+                    <button class="btn btn_green">Отправить</button>
+                </div>
+            </div>
+        </div>
+    </div><!-- .popup -->
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script type="text/javascript">
         window.jQuery || document.write('<script type="text/javascript" src="javascript/libs/jquery-1.9.1.min.js"><\/script>');
@@ -404,7 +433,9 @@
     <!--[if lte IE 7]>
         <script src="javascript/ie7/warning.js"></script><script>window.onload=function(){e("javascript/ie7/")}</script>
     <![endif]-->
-    <script src="javascript/plugins/jquery.carouFredSel-6.2.0.js" type="text/javascript"></script>
+    <script src="javascript/plugins/jquery.carouFredSel-6.2.1-packed.js" type="text/javascript"></script>
+    <script src="javascript/plugins/jquery.mousewheel-3.0.6.pack.js" type="text/javascript"></script>
+    <script src="javascript/plugins/jquery.fancybox.pack.js" type="text/javascript"></script>
     <!--[if lte IE 9]>
         <script src="javascript/plugins/jquery.placeholder.js" type="text/javascript"></script>
     <![endif]-->

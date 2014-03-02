@@ -56,6 +56,15 @@ input[type="password"],
 textarea {
     padding: 0;
 }
+select::-moz-focus-inner,
+button::-moz-focus-inner,
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+input[type="file"] > input[type="button"]::-moz-focus-inner {
+    padding: 0;
+    border: 0
+}
 input[type="checkbox"] {
     vertical-align: top;
 }
